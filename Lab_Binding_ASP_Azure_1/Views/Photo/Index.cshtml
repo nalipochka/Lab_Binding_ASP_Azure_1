@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Photo>
+
+<div class="container-fluid">
+    <div class="row mb-4">
+        <div class="col">
+            <a asp-action="Create" class="btn btn-outline-secondary">Add Photo</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-6">
+        @foreach (var photo in Model)
+        {
+            <div class="col cloud-image mb-2 position-relative">
+                <img class="img-fluid img-thumbnail" src="@photo.PhotoUrl" alt="@photo.Filename">
+                <div class="text-white opacity-75 position-absolute top-50 start-50 translate-middle">@photo.Description</div>
+                <div class="btn-group btn-group-sm mb-2">
+                    <a asp-action="Edit" asp-route-id="@photo.Id" class="btn btn-outline-warning">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@photo.Id" class="btn btn-outline-danger">Delete</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,12 @@
+﻿@model EditPhotoDTO
+
+<form asp-action="Edit" enctype="multipart/form-data" method="post">
+    <span asp-validation-summary="Model"></span>
+    <input type="hidden" asp-for="Id" />
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label">Description:</label>
+        <input asp-for="Description" class="form-control" type="text" />
+    </div>
+    <input type="submit" class="btn btn-primary" value="Edit" />
+    <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
+</form>

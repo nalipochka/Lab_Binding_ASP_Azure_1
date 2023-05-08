@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_Binding_ASP_Azure_1", "Lab_Binding_ASP_Azure_1\Lab_Binding_ASP_Azure_1.csproj", "{3B4EFD6D-9EF7-4AD0-90D3-7DB8953E06FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B4EFD6D-9EF7-4AD0-90D3-7DB8953E06FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B4EFD6D-9EF7-4AD0-90D3-7DB8953E06FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B4EFD6D-9EF7-4AD0-90D3-7DB8953E06FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B4EFD6D-9EF7-4AD0-90D3-7DB8953E06FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F4A2927-D5C7-4496-A7A8-B475D65A726F}
+	EndGlobalSection
+EndGlobal

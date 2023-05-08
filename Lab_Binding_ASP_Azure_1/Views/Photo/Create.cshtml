@@ -1,0 +1,15 @@
+﻿@model CreatePhotoDTO
+
+<form asp-action="Create" enctype="multipart/form-data" method="post">
+    <span asp-validation-summary="Model"></span>
+    <div class="mb-3">
+        <label asp-for="Photo" class="form-label">Photo:</label>
+        <input asp-for="Photo" class="form-control" type="file" accept="image/*"/>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label">Description:</label>
+        <input asp-for="Description" class="form-control" type="text"/>
+    </div>
+    <input type="submit" class="btn btn-primary" value="Add" />
+    <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
+</form>
